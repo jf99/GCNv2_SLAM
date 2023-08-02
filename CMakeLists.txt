@@ -30,7 +30,7 @@ if(NOT OpenCV_FOUND)
     message(FATAL_ERROR "OpenCV not found.")
 endif()
 
-find_package(Eigen3 3.1.0 REQUIRED)
+find_package(Eigen3 REQUIRED)
 find_package(Pangolin REQUIRED)
 
 if( TORCH_PATH ) 
