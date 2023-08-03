@@ -181,7 +181,7 @@ cv::Mat Tracking::GrabImageStereo(const cv::Mat &imRectLeft, const cv::Mat &imRe
         }
         else
         {
-            cvtColor(mImGray,mImGray,CV_BGR2GRAY);
+            cvtColor(mImGray,mImGray,cv::COLOR_BGR2GRAY);
             cvtColor(imGrayRight,imGrayRight,cv::COLOR_BGR2GRAY);
         }
     }
