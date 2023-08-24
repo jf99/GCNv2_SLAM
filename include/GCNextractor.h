@@ -22,7 +22,6 @@
 #define GCNEXTRACTOR_H
 
 #include <torch/script.h> // One-stop header.
-#include <torch/torch.h>
 
 // Compile will fail for opimizier since pytorch defined this
 #ifdef EIGEN_MPL2_ONLY
