@@ -77,7 +77,7 @@ target_link_libraries(${PROJECT_NAME}
 )
 
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/GCN2)
-add_executable(rgbd_gcn GCN2/rgbd_gcn.cc)
-target_link_libraries(rgbd_gcn ${PROJECT_NAME} ${TORCH_LIBRARIES})
-set_property(TARGET rgbd_gcn PROPERTY CXX_STANDARD 11)
+#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/GCN2)
+#add_executable(rgbd_gcn GCN2/rgbd_gcn.cc)
+#target_link_libraries(rgbd_gcn ${PROJECT_NAME} ${TORCH_LIBRARIES})
+#set_property(TARGET rgbd_gcn PROPERTY CXX_STANDARD 14)
