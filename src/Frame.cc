@@ -187,7 +187,7 @@ Frame::Frame(const cv::Mat &imGray, const cv::Mat &imDepth, const double &timeSt
     mvLevelSigma2 = mpGCNextractor->GetScaleSigmaSquares();
     mvInvLevelSigma2 = mpGCNextractor->GetInverseScaleSigmaSquares();
 
-    // ORB extraction
+    // feature extraction
     ExtractGCN(imGray);
 
     N = mvKeys.size();
@@ -297,7 +297,7 @@ Frame::Frame(const cv::Mat &imGray, const double &timeStamp, GCNextractor* extra
     mvInvLevelSigma2 = mpGCNextractor->GetInverseScaleSigmaSquares();
 
     // feature extraction
-    ExtractGCN(0,imGray);
+    ExtractGCN(imGray);
 
     N = mvKeys.size();
 
