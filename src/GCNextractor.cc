@@ -223,7 +223,7 @@ void GCNextractor::operator()( InputArray _image, InputArray _mask, vector<KeyPo
 { 
 
     torch::DeviceType device_type;
-    device_type = torch::kCUDA;
+    device_type = torch::kCPU;
     torch::Device device(device_type);
 
     if(_image.empty())
